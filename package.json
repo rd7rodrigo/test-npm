@@ -1,16 +1,24 @@
 {
-  "name": "vue-library",
+  "name": "@rd7/vue-library",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name rd7R ./src/index.js",
     "lint": "vue-cli-service lint"
   },
+  "main": "./dist/rd7.common.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
   },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
